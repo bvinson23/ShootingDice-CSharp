@@ -19,10 +19,13 @@ namespace ShootingDice
             smack.Taunt = "'You wanna roll dice with me?!'";
 
             SoreLoserPlayer player4 = new SoreLoserPlayer();
-            player4.Name = "Phil Hellmuth";
+            player4.Name = "LeBron";
 
             UpperHalfPlayer player5 = new UpperHalfPlayer();
             player5.Name = "LSV";
+
+            SoreLoserUpperHalfPlayer player6 = new SoreLoserUpperHalfPlayer();
+            player6.Name = "Phil Hellmuth";
 
             player2.Play(player1);
 
@@ -51,7 +54,7 @@ namespace ShootingDice
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, player4, large, smack, player5
+                player1, player2, player3, player4, large, smack, player5, player6
             };
 
             PlayMany(players);
