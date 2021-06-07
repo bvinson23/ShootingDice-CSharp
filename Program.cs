@@ -14,7 +14,15 @@ namespace ShootingDice
             Player player2 = new Player();
             player2.Name = "Sue";
 
+            SmackTalkingPlayer smack = new SmackTalkingPlayer();
+            smack.Name = "Toothbrush McGee";
+            smack.Taunt = "'You wanna roll dice with me?!'";
+
             player2.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            smack.Play(player1);
 
             Console.WriteLine("-------------------");
 
@@ -33,7 +41,7 @@ namespace ShootingDice
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large
+                player1, player2, player3, large, smack
             };
 
             PlayMany(players);
