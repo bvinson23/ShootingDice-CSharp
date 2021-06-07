@@ -26,8 +26,12 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
-            Player player3 = new Player();
+            CreativeSmackTalkingPlayer player3 = new CreativeSmackTalkingPlayer();
             player3.Name = "Wilma";
+            player3.Taunts.Add("Suck it!");
+            player3.Taunts.Add("Hate the player, not the game");
+            player3.Taunts.Add("You got a sharpie? I can autograph that for you.");
+            player3.Taunts.Add("I eat pieces of shit like you for breakfast.");
 
             player3.Play(player2);
 
