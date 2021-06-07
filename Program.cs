@@ -8,7 +8,7 @@ namespace ShootingDice
     {
         static void Main(string[] args)
         {
-            Player player1 = new Player();
+            HumanPlayer player1 = new HumanPlayer();
             player1.Name = "Bob";
 
             OneHigherPlayer player2 = new OneHigherPlayer();
